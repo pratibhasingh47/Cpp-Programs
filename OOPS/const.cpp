@@ -1,10 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class length{
-    public:
+class length
+{
+public:
     int l;
-    length(){
-        l =100;
+    length()
+    {
+        l = 100;
     }
 };
 int main()
