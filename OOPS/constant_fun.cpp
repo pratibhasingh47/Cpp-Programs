@@ -1,13 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class area{
+class area
+{
     int x;
-    public:
-    void read(const int &a){
+
+public:
+    void read(const int &a)
+    {
         x = a;
     }
-    int ar(){
-        return x*x;
+    int ar()
+    {
+        return x * x;
     }
 };
 int main()
