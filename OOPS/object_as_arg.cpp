@@ -15,7 +15,11 @@ int main()
     E1.a = 50;
     E2.a = 100;
     cout << "Initial value\n";
-    cout << "Value of object\n" << E1.a << "\nObject-2\n" << E2.a << endl;
+    cout << "Value of object\n"
+         << E1.a << "\nObject-2\n"
+         << E2.a << endl;
     E2.add(E1);
-    cout << "New Value of object\n" << E1.a << "\nObject-2\n"<< E2.a << endl;
+    cout << "New Value of object\n"
+         << E1.a << "\nObject-2\n"
+         << E2.a << endl;
 }
