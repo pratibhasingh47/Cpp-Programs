@@ -23,7 +23,7 @@ public:
 int main()
 {
     swapp s;
-    s.swapvalues(10,20);
+    s.swapvalues(10, 20);
     s.display();
     return 0;
 }
