@@ -1,14 +1,16 @@
 #include <iostream>
 #include <string>
 
-class Student {
+class Student
+{
 public:
     // Member variables
     std::string name;
     int roll_no;
 };
 
-int main() {
+int main()
+{
     // Create an object of the 'Student' class and assign values
     Student student;
     student.name = "John";
@@ -17,5 +19,4 @@ int main() {
     // Print the values
     std::cout << "Student Name: " << student.name << std::endl;
     std::cout << "Roll Number: " << student.roll_no << std::endl;
-
 }
