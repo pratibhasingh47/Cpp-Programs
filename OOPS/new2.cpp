@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-class Student {
+class Student
+{
 public:
     // Member variables
     std::string name;
@@ -10,17 +11,18 @@ public:
     std::string address;
 };
 
-int main() {
+int main()
+{
     // Create two objects of the 'Student' class and assign values
     Student sam;
     sam.name = "Sam";
-    sam.roll_no = 1;  // Assigning roll no. to Sam 
+    sam.roll_no = 1; // Assigning roll no. to Sam
     sam.phone_number = "123-456-7890";
     sam.address = "123 Main St, City, Country";
 
     Student john;
     john.name = "John";
-    john.roll_no = 2;  // Assign roll number for John
+    john.roll_no = 2; // Assign roll number for John
     john.phone_number = "987-654-3210";
     john.address = "456 Elm St, Another City, Another Country";
 
@@ -30,7 +32,7 @@ int main() {
     std::cout << "Phone Number: " << sam.phone_number << std::endl;
     std::cout << "Address: " << sam.address << std::endl;
 
-    // Print the information for John 
+    // Print the information for John
     std::cout << "\nStudent Name: " << john.name << std::endl;
     std::cout << "Roll Number: " << john.roll_no << std::endl;
     std::cout << "Phone Number: " << john.phone_number << std::endl;
