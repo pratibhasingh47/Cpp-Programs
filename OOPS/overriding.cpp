@@ -27,7 +27,7 @@ public:
 int main()
 {
     a1 obj;
-    obj.read(47,59);
+    obj.read(47, 59);
     obj.display();
     a2 obj2;
     obj2.display();
