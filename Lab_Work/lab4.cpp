@@ -1,4 +1,4 @@
-WRITE A BASIC PROGRAM OF Compile time POLYMORPHISM IN C++?
+// WRITE A BASIC PROGRAM OF Compile time POLYMORPHISM IN C++?
 
 #include<iostream>
 using namespace std;
@@ -28,16 +28,16 @@ int main()
 	return 0;
 	
 }
-Output :- value of x is 7
-value of x is 9.26
-value of x and y is 85,69
+// Output :- value of x is 7
+// value of x is 9.26
+// value of x and y is 85,69
 
 
 
----------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
 
 
-WRITE A PROGRAM OF FUNCTION OVERLOADING USING COMPILE TIME POLYMORPHISM IN C++?         
+// WRITE A PROGRAM OF FUNCTION OVERLOADING USING COMPILE TIME POLYMORPHISM IN C++?         
 #include <iostream>
 using namespace std;
 
@@ -73,20 +73,20 @@ int main(void) {
     obj1.show(); 
     return 0;
 }
-OUTPUT:-Value of X: 7
-Value of Y: 9.5
-Value of Y: 21.3
-Sum of X, Y, Z is 37.8
-No arguments provided.
+// OUTPUT:-Value of X: 7
+// Value of Y: 9.5
+// Value of Y: 21.3
+// Sum of X, Y, Z is 37.8
+// No arguments provided.
 
 
 
 
-----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 
 
-3.write a program of operator overloading using c++?
+// 3.write a program of operator overloading using c++?
 #include <iostream>  
 using namespace std;  
 class A  
@@ -117,16 +117,16 @@ int main()
     a1+a2;  
     return 0;  
 }
-Output
-The result of the addition of two objects is: Welcomeback
+// Output
+// The result of the addition of two objects is: Welcomeback
 
 
 
 
---------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 
 
-4.Write a run time polymorphism program using method overriding in c++?
+// 4.Write a run time polymorphism program using method overriding in c++?
 #include <iostream>
 using namespace std;
 
@@ -159,17 +159,17 @@ int main()
 	bptr->show();
 	return 0;
 }
-output:-print derived class
-show base class
+// output:-print derived class
+// show base class
 
 
 
 
--------------------------------------------------------------------------
+// -------------------------------------------------------------------------
 
 
 
-5.write a Virtual Function used to invoke the derived class in a program in c++?
+// 5.write a Virtual Function used to invoke the derived class in a program in c++?
 #include<iostream>
 using namespace std; 
  
@@ -212,7 +212,7 @@ int main()
  
     return 0; 
 } 
-Output
- derived class Action:10
+// Output
+//  derived class Action:10
 
-show base class
+// show base class
