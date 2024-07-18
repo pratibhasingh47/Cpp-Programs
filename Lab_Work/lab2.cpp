@@ -12,7 +12,8 @@ class A
 {
 public:
     // User defined constructor
-    A() { cout << "A Constructor" << endl; }
+    A() { 
+        cout << "A Constructor" << endl; }
 
     // uninitialized
     int size;
