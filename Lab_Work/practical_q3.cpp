@@ -1,4 +1,4 @@
-//pure virtual 
+// pure virtual
 #include <iostream>
 using namespace std;
 class Animal
