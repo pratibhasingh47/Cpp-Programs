@@ -1,313 +1,311 @@
-// Q1. C++ program to demonstrate Default constructors?
-// #include <iostream>
-// using namespace std;
+// Q1.C++ program to demonstrate Default constructors ?
+#include <iostream>
+using namespace std;
 
-// class Base
-// {
-// public:
-//     // compiler "declares" constructor
-// };
+class Base
+{
+public:
+    // compiler "declares" constructor
+};
 
-// class A
-// {
-// public:
-//     // User defined constructor
-//     A() { cout << "A Constructor" << endl; }
+class A
+{
+public:
+    // User defined constructor
+    A() { cout << "A Constructor" << endl; }
 
-//     // uninitialized
-//     int size;
-// };
+    // uninitialized
+    int size;
+};
 
-// class B : public A
-// {
-//     // compiler defines default constructor of B, and
-//     // inserts stub to call A constructor
+class B : public A
+{
+    // compiler defines default constructor of B, and
+    // inserts stub to call A constructor
 
-//     // compiler won't initialize any data of A
-// };
+    // compiler won't initialize any data of A
+};
 
-// class C : public A
-// {
-// public:
-//     C()
-//     {
-//         // User defined default constructor of C
-        // Compiler inserts stub to call A's constructor
-//         cout << "C Constructor" << endl;
+class C : public A
+{
+public:
+    C()
+    {
+        // User defined default constructor of C
+        Compiler inserts stub to call A's constructor cout << "C Constructor" << endl;
 
-//         // compiler won't initialize any data of A
-//     }
-// };
+        // compiler won't initialize any data of A
+    }
+};
 
-// class D
-// {
-// public:
-//     D()
-//     {
-//         // User defined default constructor of D
-//         // a - constructor to be called, compiler inserts
-//         // stub to call A constructor
-//         cout << "D Constructor" << endl;
+class D
+{
+public:
+    D()
+    {
+        // User defined default constructor of D
+        // a - constructor to be called, compiler inserts
+        // stub to call A constructor
+        cout << "D Constructor" << endl;
 
-//         // compiler won't initialize any data of 'a'
-//     }
+        // compiler won't initialize any data of 'a'
+    }
 
-// private:
-//     A a;
-// };
+private:
+    A a;
+};
 
-// Driver Code
-// int main()
-// {
-//     Base base;
+Driver Code int main()
+{
+    Base base;
 
-//     B b;
-//     C c;
-//     D d;
+    B b;
+    C c;
+    D d;
 
-//     return 0;
-// }
+    return 0;
+}
 // Output
-// A Constructor
-// A Constructor
-// C Constructor
-// A Constructor
-// D Constructor
+//     A Constructor
+//         A Constructor
+//             C Constructor
+//                 A Constructor
+//                     D Constructor
 
-// Q2.  C++ program to demonstrate Parameterized Constructor?
+// Q2.C++ program to demonstrate Parameterized Constructor
+    
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// // Class declaration.
-// class Demo
-// {
-//     // Private block  to declare data member( X,Y )
-//     // of integer type.
-// private:
-//     int X;
-//     int Y;
+// Class declaration.
+class Demo
+{
+    // Private block  to declare data member( X,Y )
+    // of integer type.
+private:
+    int X;
+    int Y;
 
-//     // Public block of member function to
-//     // access data members.
-// public:
-//     // Declaration of perameterized constructor to
-//     // initailize data members.
-//     Demo(int a, int b);
-    // To take input from user.
-//     void Input();
-//     // To display output onn screen.
-//     void Display();
+    // Public block of member function to
+    // access data members.
+public:
+    // Declaration of perameterized constructor to
+    // initailize data members.
+    Demo(int a, int b);
+    To take input from user.void Input();
+    // To display output onn screen.
+    void Display();
 
-// }; // End of class
+}; // End of class
 
-// // Definition of constructor.
-// Demo::Demo(int a, int b)
-// {
-//     X = a;
-//     Y = b;
-// }
+// Definition of constructor.
+Demo::Demo(int a, int b)
+{
+    X = a;
+    Y = b;
+}
 
-// // Definition of Input() member function.
-// void Demo::Input()
-// {
-//     cout << "Enter Value of X: ";
-//     cin >> X;
-//     cout << "Enter Value of Y: ";
-//     cin >> Y;
-// }
+// Definition of Input() member function.
+void Demo::Input()
+{
+    cout << "Enter Value of X: ";
+    cin >> X;
+    cout << "Enter Value of Y: ";
+    cin >> Y;
+}
 
-// // Definition of Display() member function.
-// void Demo::Display()
-// {
-//     cout << endl
-//         << "X: " << X;
-//     cout << endl
-//         << "Y: " << Y << endl;
-// }
+// Definition of Display() member function.
+void Demo::Display()
+{
+    cout << endl
+         << "X: " << X;
+    cout << endl
+         << "Y: " << Y << endl;
+}
 
-// int main()
-// {
-//     // Ctor autometically call when object is created.
-//     Demo d(10, 20);
+int main()
+{
+    // Ctor autometically call when object is created.
+    Demo d(10, 20);
 
-//     // Display value of data member.
-//     cout << endl<< "Method 1: " << endl;
-//     cout << "Value after initialization: ";
-//     d.Display();
+    // Display value of data member.
+    cout << endl
+         << "Method 1: " << endl;
+    cout << "Value after initialization: ";
+    d.Display();
 
-//     d.Input();
-//     cout << "Value after User Input : ";
-//     d.Display();
+    d.Input();
+    cout << "Value after User Input : ";
+    d.Display();
 
-//     // We can also create object like this
-//     Demo d1 = Demo(10, 20);
+    // We can also create object like this
+    Demo d1 = Demo(10, 20);
 
-//     // Display value of data member.
-//     cout << endl << "Method 2: " << endl;
-//     cout << "Value after initialization: ";
-//     d1.Display();
+    // Display value of data member.
+    cout << endl
+         << "Method 2: " << endl;
+    cout << "Value after initialization: ";
+    d1.Display();
 
-//     return 0;
-// }
+    return 0;
+}
 // Output
 
-// Method 1 : Value after initialization : X : 10 Y : 20 Enter Value of X : 25 Enter Value of Y : 30 Value after User Input : X : 25 Y : 30
+//     Method 1 : Value after initialization : X : 10 Y : 20 Enter Value of X : 25 Enter Value of Y : 30 Value after User Input : X : 25 Y : 30
 
-// Method 2 : Value after initialization : X : 10 Y : 20
+//     Method 2 : Value after initialization : X : 10 Y : 20
 
 // Q3.C++ program to demonstrate Copy Constructor
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// // Class declaration.
-// class Demo
-// {
-//     // Private block  to declare data member( X,Y ) of
-//     // integer type.
-// private:
-//     int X;
-//     int Y;
+// Class declaration.
+class Demo
+{
+    // Private block  to declare data member( X,Y ) of
+    // integer type.
+private:
+    int X;
+    int Y;
 
-//     // Public block of member function to
-//     // access data members.
-// public:
-//     // Declaration of parameterized constructor to
-//     // initialize data members.
-//     Demo(int a, int b);
-//     // Declaration of copy constructor to
-//     // initialize data members.
-//     Demo(const Demo &d);
-//     // To display output on screen.
-//     void Display();
+    // Public block of member function to
+    // access data members.
+public:
+    // Declaration of parameterized constructor to
+    // initialize data members.
+    Demo(int a, int b);
+    // Declaration of copy constructor to
+    // initialize data members.
+    Demo(const Demo &d);
+    // To display output on screen.
+    void Display();
 
-// }; // End of class
+}; // End of class
 
-// // Definition of parameterized constructor.
-// Demo::Demo(int a, int b)
-// {
-//     X = a;
-//     Y = b;
-// }
+// Definition of parameterized constructor.
+Demo::Demo(int a, int b)
+{
+    X = a;
+    Y = b;
+}
 
-// // Definition of copy constructor.
-// Demo::Demo(const Demo &d)
-// {
-//     X = d.X;
-//     Y = d.Y;
-// }
+// Definition of copy constructor.
+Demo::Demo(const Demo &d)
+{
+    X = d.X;
+    Y = d.Y;
+}
 
-// // Definition of Display () member function.
-// void Demo::Display()
-// {
-//     cout << endl<< "X: " << X;
-//     cout << endl<< "Y: " << Y << endl;
-// }
+// Definition of Display () member function.
+void Demo::Display()
+{
+    cout << endl
+         << "X: " << X;
+    cout << endl
+         << "Y: " << Y << endl;
+}
 
-// int main()
-// {
-//     // Ctor automatically call when object is created.
-//     Demo d1(10, 20);
+int main()
+{
+    // Ctor automatically call when object is created.
+    Demo d1(10, 20);
 
-//     // Display value of data member.
-//     cout << endl<< "D1 Object: " << endl;
-//     cout << "Value after initialization : ";
-//     d1.Display();
+    // Display value of data member.
+    cout << endl
+         << "D1 Object: " << endl;
+    cout << "Value after initialization : ";
+    d1.Display();
 
-//     // Intialize object with other object using copy constructor
-//     Demo d2 = Demo(d1); // also write like this :Demo d2(d1);
+    // Intialize object with other object using copy constructor
+    Demo d2 = Demo(d1); // also write like this :Demo d2(d1);
 
-//     // Display value of data member.
-//     cout << endl<< "D2 Object: " << endl;
-//     cout << "Value after initialization : ";
-//     d2.Display();
+    // Display value of data member.
+    cout << endl
+         << "D2 Object: " << endl;
+    cout << "Value after initialization : ";
+    d2.Display();
 
-//     return 0;
-// }
-// D1 Object : Value after initialization : X : 10 Y : 20
-// D2 Object : Value after initialization : X : 10 Y : 20
-
-
+    return 0;
+}
+// D1 Object : Value after initialization : X : 10 Y : 20 D2 Object : Value after initialization : X : 10 Y : 20
 
 // Q4.C++ program to demonstrate Constructor Overloading
 
+#include <iostream>
+using namespace std;
 
-// #include <iostream>
-// using namespace std;
+// Class declaration.
+class Demo
+{
+    // Private block to declare data member( X,Y )
+    // of integer type.
+private:
+    int X;
+    int Y;
 
-// // Class declaration.
-// class Demo
-// {
-//     // Private block to declare data member( X,Y )
-//     // of integer type.
-// private:
-//     int X;
-//     int Y;
+    // Public blocks of member function to
+    // access data members.
+public:
+    // Declaration of default constructor to
+    // initialize data members.
+    Demo();
 
-//     // Public blocks of member function to
-//     // access data members.
-// public:
-//     // Declaration of default constructor to
-//     // initialize data members.
-//     Demo();
+    // Declaration of parameterized constructor to
+    // initialize data members.
+    Demo(int a, int b);
+    // To display output onn screen.
+    void Display();
 
-//     // Declaration of parameterized constructor to
-//     // initialize data members.
-//     Demo(int a, int b);
-//     // To display output onn screen.
-//     void Display();
+}; // End of class
 
-// }; // End of class
+// Definition of parameterized constructor.
+Demo::Demo()
+{
+    X = 10;
+    Y = 20;
+}
 
-// // Definition of parameterized constructor.
-// Demo::Demo()
-// {
-//     X = 10;
-//     Y = 20;
-// }
+// Definition of parameterized constructor.
+Demo::Demo(int a, int b)
+{
+    X = a;
+    Y = b;
+}
 
-// // Definition of parameterized constructor.
-// Demo::Demo(int a, int b)
-// {
-//     X = a;
-//     Y = b;
-// }
+// Definition of Display() member function.
+void Demo::Display()
+{
+    cout << endl
+         << "X: " << X;
+    cout << endl
+         << "Y: " << Y << endl;
+}
 
-// // Definition of Display() member function.
-// void Demo::Display()
-// {
-//     cout << endl<< "X: " << X;
-//     cout << endl<< "Y: " << Y << endl;
-// }
+int main()
+{
+    Demo d1;
+    cout << "Default Constructor: " << endl;
+    cout << "Value after initialization : ";
+    d1.Display();
 
-// int main()
-// {
-//     Demo d1;
-//     cout << "Default Constructor: " << endl;
-//     cout << "Value after initialization : ";
-//     d1.Display();
+    // Ctor automatically call when object is created.
+    Demo d2(30, 40);
+    cout << "Parameterized Constructor: " << endl;
+    cout << "Value after initialization : ";
+    d2.Display();
 
-//     // Ctor automatically call when object is created.
-//     Demo d2(30, 40);
-//     cout << "Parameterized Constructor: " << endl;
-//     cout << "Value after initialization : ";
-//     d2.Display();
-
-//     return 0;
-// }
+    return 0;
+}
 // Output
 
-//     Default Constructor : Value after initialization : X : 10 Y : 2
-//     Parameterized Constructor : Value after initialization : X : 30 Y : 40
+//     Default Constructor : Value after initialization : X : 10 Y : 2 Parameterized Constructor : Value after initialization : X : 30 Y : 40
 
-
-
-// Q5.C++ program to demonstrate destructors
-
+ //  Q5.C++ program to demonstrate destructors
 
 #include <iostream>
-    using namespace std;
+using namespace std;
 
 // Class Declaration
 class Demo
@@ -383,10 +381,10 @@ int main()
 // Destructor Called
 // Destructor Called
 
-//Q6.C++ program to demonstrate constructor using this pointer?
+// Q6.C++ program to demonstrate constructor using this pointer?
 
 #include <iostream>
-    using namespace std;
+using namespace std;
 
 class Demo
 {
@@ -400,7 +398,8 @@ public: // Public Member function section
         X = 0;
         Y = 0;
 
-        cout << endl<< "Constructor Called";
+        cout << endl
+             << "Constructor Called";
     }
     // Perameterized constructor.
     Demo(int X, int Y)
@@ -408,19 +407,23 @@ public: // Public Member function section
         this->X = X;
         this->Y = Y;
 
-        cout << endl<< "Constructor Called";
+        cout << endl
+             << "Constructor Called";
     }
 
     // Destructor called when object is destroyed
     ~Demo()
     {
-        cout << endl<< "Destructor Called" << endl;
+        cout << endl
+             << "Destructor Called" << endl;
     }
     // To print output on console
     void putValues()
     {
-        cout << endl<< "Value of X : " << X;
-        cout << endl<< "Value of Y : " << Y << endl;
+        cout << endl
+             << "Value of X : " << X;
+        cout << endl
+             << "Value of Y : " << Y << endl;
     }
 };
 
@@ -429,12 +432,14 @@ int main()
 {
     Demo d1 = Demo(10, 20);
 
-    cout << endl<< "D1 Value Are : ";
+    cout << endl
+         << "D1 Value Are : ";
     d1.putValues();
 
     Demo d2 = Demo(30, 40);
 
-    cout << endl<< "D2 Value Are : ";
+    cout << endl
+         << "D2 Value Are : ";
     d2.putValues();
 
     // cout << endl ;
@@ -442,7 +447,6 @@ int main()
     return 0;
 }
 // Output.0.
-
 
 //     Constructor Called
 //         D1 Value Are : Value of X : 10 Value of Y : 20
