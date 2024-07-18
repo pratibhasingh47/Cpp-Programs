@@ -27,6 +27,7 @@ int main()
     obj1.func(85, 69);
     return 0;
 }
+
 // Output :- value of x is 7
 // value of x is 9.26
 // value of x and y is 85,69

@@ -33,7 +33,8 @@ public:
     C()
     {
         // User defined default constructor of C
-        Compiler inserts stub to call A's constructor cout << "C Constructor" << endl;
+        // Compiler inserts stub to call A's constructor 
+        cout << "C Constructor" << endl;
 
         // compiler won't initialize any data of A
     }
@@ -56,7 +57,8 @@ private:
     A a;
 };
 
-Driver Code int main()
+// Driver Code 
+int main()
 {
     Base base;
 
@@ -94,7 +96,8 @@ public:
     // Declaration of perameterized constructor to
     // initailize data members.
     Demo(int a, int b);
-    To take input from user.void Input();
+    // To take input from user.
+    void Input();
     // To display output onn screen.
     void Display();
 
