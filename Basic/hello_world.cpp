@@ -6,7 +6,7 @@ bool next();
 int main()
 {
     printf("Hi\n");
-    cout << "Hiiiii MorningStar" << endl;
+    cout << "Hiiiii Pratibha" << endl;
     cout << "Hiiiii MorningStar\n";
 
     int n;
