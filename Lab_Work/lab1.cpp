@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -6,12 +6,13 @@ int main()
     return 0;
 }
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
-class H{
-    public:
-    void print(){
+class H
+{
+public:
+    void print()
+    {
         cout << "Hello World" << endl;
     }
 };
@@ -22,8 +23,7 @@ int main()
     return 0;
 }
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -33,12 +33,12 @@ int main()
     return 0;
 }
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class student{
-    public:
+class student
+{
+public:
     int num;
     string name;
 };
@@ -52,16 +52,17 @@ int main()
     return 0;
 }
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
-class student{
-    public:
-    int roll_no ;
+class student
+{
+public:
+    int roll_no;
     string name;
 };
-class car {
-    public:
+class car
+{
+public:
     int price;
     string name;
 };
