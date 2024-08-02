@@ -7,6 +7,7 @@ void display(vector<int> &v){
     for(int i = 0; i< v.size() ; i++){
         cout << v[i] << " ";
     }
+    cout << endl;
 }
 
 int main()
@@ -18,5 +19,7 @@ int main()
         cin >> element;
         vec1.push_back(element);
     }
+    cout << "The vector is displayed as :" << endl;
+    display(vec1);
     return 0;
 }
