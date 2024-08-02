@@ -22,5 +22,9 @@ int main()
     vec1.pop_back();
     cout << "The vector is displayed as :" << endl;
     display(vec1);
+    // vec1.insert(iterator , 786);
+    vector<int> :: iterator iter = vec1.begin();
+    vec1.insert(iter,786);
+    display(vec1);
     return 0;
 }
