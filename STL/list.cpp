@@ -23,7 +23,6 @@ int main()
     list1.push_back(71);
 
     display(list1);
-    
 
     list<int> :: iterator iter;
     iter = list1.begin();
