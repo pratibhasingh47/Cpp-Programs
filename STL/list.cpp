@@ -26,18 +26,19 @@ int main()
 
     list<int> :: iterator iter;
     iter = list1.begin();
-    cout << *iter << "  ";
-    iter++;
-    cout << *iter << "  ";
-    iter++;
-    cout << *iter << "  ";
-    iter++;
-    cout << *iter << "  ";
-    iter++;
-    cout << *iter << "  ";
-    iter++;
-    cout << *iter << "  ";
-    iter++;
     
+    cout << *iter << "  ";
+    iter++;
+    cout << *iter << "  ";
+    iter++;
+    cout << *iter << "  ";
+    iter++;
+    cout << *iter << "  ";
+    iter++;
+    cout << *iter << "  ";
+    iter++;
+    cout << *iter << "  ";
+    iter++;
+
     return 0;
 }
