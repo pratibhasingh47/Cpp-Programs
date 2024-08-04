@@ -24,6 +24,20 @@ int main()
 
     display(list1);
 
+    list<int> list2(3);
+    list<int> :: iterator itr;
+    itr = list2.begin();
+    *itr = 45;
+    itr++;
+    *itr = 6;
+    itr++;
+    *itr = 9;
+    itr++;
+    *itr = 70;
+    itr++;
+    display(list2);
+
+
     list<int> :: iterator iter;
     iter = list1.begin();
     
