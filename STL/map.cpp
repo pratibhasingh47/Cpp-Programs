@@ -7,7 +7,7 @@ int main()
     marksMap["Chitur pitur"] = 19;
     marksMap["Chitur pitur part 2"] = 17;
 
-    map<string,int> :: iterator itr;
+    map<string,int> :: iterator iter;
     for(iter = marksMap.begin(); iter!=marksMap.end(); iter++){
         cout << (*iter).first << " " << (*iter).second << "\n";
     }
