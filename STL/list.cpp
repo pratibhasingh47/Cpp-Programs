@@ -23,6 +23,8 @@ int main()
     list1.push_back(71);
 
     display(list1);
+    list1.sort();
+    display(list1);
 
     list<int> list2(3);
     list<int> :: iterator itr;
@@ -33,9 +35,11 @@ int main()
     itr++;
     *itr = 9;
     itr++;
-    *itr = 70;
-    itr++;
     display(list2);
+    list1.merge(list2);
+    display(list1);
+    list1.reverse();
+    display(list1);
 
 
     list<int> :: iterator iter;
