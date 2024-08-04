@@ -12,6 +12,9 @@ int main()
     for(iter = marksMap.begin(); iter!=marksMap.end(); iter++){
         cout << (*iter).first << " " << (*iter).second << "\n";
     }
+    cout << "the size is :" << marksMap.size() << endl;
+    cout << "the max size is :" << marksMap.max_size() << endl;
+    cout << "the empty return value is :" << marksMap.empty() << endl;
 
     return 0;
 }
